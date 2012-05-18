@@ -13,6 +13,6 @@ echo OPENSHIFT_TMP_DIR: $OPENSHIFT_TMP_DIR
 cd $OPENSHIFT_GEAR_DIR/repo/osgi/felix-framework-4.0.2 
 export felixcmd="java -Dorg.ops4j.pax.web.listening.addresses=$OPENSHIFT_INTERNAL_IP -jar bin/felix.jar"
 echo "Command Line: $felixcmd"
-$felixcmd &
+nohup $felixcmd &
 
 
